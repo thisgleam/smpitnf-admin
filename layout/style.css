@@ -1,0 +1,38 @@
+.table thead th {
+  color: #17a2b8; /* Warna biru untuk header tabel */
+}
+
+.table tbody td {
+  color: var(--bs-body-color);
+}
+
+.navbar-nav .nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.274); /* Background transparan */
+  border-radius: 5px;
+}
+
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: 20px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.mySlides {
+  display: none;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
