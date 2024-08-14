@@ -96,6 +96,15 @@ $data_akun = select("SELECT * FROM akun ORDER BY id_akun DESC");
                         </li>
                         <li class="nav-header"><b>Daftar Menu</b></li>
                         <?php if ($_SESSION['level'] == 1):?>
+                            <li class="nav-item"> <a href="data_dokumen" class="nav-link"> <i class="nav-icon fas fa-folder"></i>
+                            <p>Arsip Akreditas</p>
+                        </a> </li>
+                        <?php endif;?>
+                        <li class="nav-item"> <a href="arsip_materi" class="nav-link"> <i class="nav-icon fas fa-book"></i>
+                                <p>Arsip Materi</p>
+                            </a> </li>
+                        <?php if ($_SESSION['level'] == 1):?>
+                        <li class="nav-header"><b>Settings</b></li>
                         <li class="nav-item"> <a href="admin" class="nav-link"> <i class="nav-icon fas fa-user-shield"></i>
                                 <p>Admin</p>
                             </a> 
@@ -104,13 +113,7 @@ $data_akun = select("SELECT * FROM akun ORDER BY id_akun DESC");
                                 <p>Backup Database</p>
                             </a> 
                         </li>
-                        <li class="nav-item"> <a href="data_dokumen" class="nav-link"> <i class="nav-icon fas fa-folder"></i>
-                                <p>Arsip Akreditas</p>
-                        </a> </li>
                         <?php endif;?>
-                        <li class="nav-item"> <a href="arsip_materi" class="nav-link"> <i class="nav-icon fas fa-book"></i>
-                                <p>Arsip Materi</p>
-                            </a> </li>
                         <li class="nav-item"> <a href="logout" class="nav-link"> <i class="nav-icon fas fa-sign-out-alt"></i>
                                 <p>Sign Out</p>
                             </a> 
