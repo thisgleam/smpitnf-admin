@@ -10,7 +10,7 @@ if (!isset($_SESSION['login'])) {
 	exit;
 }
 
-$title = 'Arsip Akreditas';
+$title = 'Dashboard';
 
 include 'layout/header.php';
 

@@ -98,6 +98,7 @@ if (isset($_POST['ubah'])) {
                                                 <th>No</th>
                                                 <th>Nama Pemilik</th>
                                                 <th>Email</th>
+                                                <th>Level</th>
                                                 <th>Username</th>
                                                 <th>Password</th>
                                                 <th>Aksi</th>
@@ -110,6 +111,15 @@ if (isset($_POST['ubah'])) {
                                                 <td><?= $no++; ?></td>
                                                 <td><?= $akun['nama']; ?></td>
                                                 <td><?= $akun['email']; ?></td>
+                                                <td>
+                                                  <?php
+                                                if ($akun['level'] == 1) {
+                                                    echo 'admin';
+                                                } elseif ($akun['level'] == 2) {
+                                                    echo 'guru';
+                                                }
+                                                ?>
+                                                </td>
                                                 <td><?= $akun['username']; ?></td>
                                                 <td>Password is Hashed</td>
 

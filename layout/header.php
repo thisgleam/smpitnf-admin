@@ -21,7 +21,7 @@ $data_akun = select("SELECT * FROM akun ORDER BY id_akun DESC");
     <link rel="shortcut icon" href="./layout/image/smpit-nf.png" type="image/x-icon">
     <link rel="stylesheet" href="./layout/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title><?= $title ?></title>
+    <title><?= $title ?> - SMPIT NURUL FIKRI</title>
     <script>
   (function () {
     const storedTheme = localStorage.getItem('theme');
